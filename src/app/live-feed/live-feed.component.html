@@ -1,0 +1,29 @@
+<div [@openClose]="isOpen ? 'open' : 'closed'"
+  (@openClose.start)="onAnimationEvent($event)"
+  (@openClose.done)="onAnimationEvent($event)"
+  class="live-feed" [ngClass]="{'expanded-live-feed': isOpen}">
+		<p class="copyright"> © 2018, Collector </p>
+		<div class="expandable" (click)="toggle()">
+			<i *ngIf="!isOpen" class="expand-feed material-icons">
+				keyboard_arrow_up
+			</i>
+			<i *ngIf="isOpen" class="expand-feed material-icons">
+				keyboard_arrow_down
+			</i>
+			<h2> Latest In The Shadow Realm </h2>
+		</div>
+		<div class="social">
+			<a href="https://www.facebook.com/collectoroffical/"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://twitter.com/CollectorOffcl"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com/collector_official/"><i class="fab fa-instagram"></i></a>
+			<a href="https://youtube.com/CollectorOfficial"></a><i class="fab fa-youtube"></i>
+		</div>
+		<div class="feeds">
+			<div class="fb-page" data-href="https://www.facebook.com/collectoroffical/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/collectoroffical/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/collectoroffical/">Collector</a></blockquote></div>
+
+			<div class="twitter"> 
+				<a class="twitter-timeline" data-width="350" data-height="500" data-theme="dark" href="https://twitter.com/CollectorOffcl?ref_src=twsrc%5Etfw">Tweets by CollectorOffcl</a> 
+			</div>
+		</div>
+			
+</div>

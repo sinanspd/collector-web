@@ -1,0 +1,79 @@
+.body{
+  background-color: black !important;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.soon{
+	color: white;
+	margin-top: 5%;
+}
+
+.later{
+	margin-top: 2%;
+}
+
+.tour-banner{
+  max-width: 1900px;
+  height: 300px;
+  background-image: url("./../../bandfullfinal.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 35%;
+  background-size: cover;
+  margin-top: -3%; 
+} 
+
+.shadow{
+	background-color: rgba(0, 0, 0, 0.6);
+	max-width: 1900px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sectionName{
+	font-size: 80px;
+	color: white;
+	padding-top: 80px;
+}
+
+.members{
+  margin-top: 5%;
+}
+
+.member{
+  width: 100% !important;
+  display: block !important;
+  margin-top: 2%;
+  height: 300px;
+}
+
+.tab{
+  color: white;
+  text-align: left;
+}
+
+.member-picture{
+  width: 15%;
+  float: left;
+  margin-left: 5%;
+}
+
+.main{
+  text-align: center;
+}
+
+.tabs{
+  width: 60%;
+  margin-left: 25% !important;
+}
+
+.bio{
+  width: 70%;
+  margin-left: 15%;
+}
+
+.main h2, .bio{
+  color: white;
+}

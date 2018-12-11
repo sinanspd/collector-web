@@ -1,0 +1,50 @@
+<div class="body">
+	<app-menu></app-menu>
+	<div class="collector-banner">
+		<div class="shadow">
+			<p class="title">Collector</p>
+			<!--<p class="title second-line-title">Liberation's Fall</p>
+			<p class="title second-line-title">Out Now</p> -->
+			<i class="material-icons down">
+				keyboard_arrow_down
+			</i>
+			<p class="scroll"> Scroll Down </p>
+		</div>
+	</div>
+
+	<div class="news">
+		<h1 class="news-header">News</h1>
+		 <mat-grid-list class="news-chunk" [cols]="cols | async" rowHeight="{{rowheight}}">
+   			<mat-grid-tile
+        		*ngFor="let new of news; let i=index"
+        		[colspan]="1"
+        		[rowspan]="1" 
+      		>
+
+      		<div class="article" *ngIf="i < 6">
+      			<p class="news-title"> {{new.title}} </p>
+      			<div class="news-border"> </div>
+      			<p class="news-date"> {{new.date}} </p>
+      			<p class="news-summary"> {{new.summary}} </p>
+      			<p class="more"> Read More </p>
+      		</div>
+
+    		</mat-grid-tile>
+ 		 </mat-grid-list> 
+	</div>
+
+	<div *ngIf="videosOpen" class="videos">
+		<h1 class="video-header"> Latest Videos </h1>
+		<iframe class="main-video" src="https://www.youtube.com/embed/mzH1cQGX7yI?wmode=opaque" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="secondary-videos">
+			<iframe class="side-video" src="https://www.youtube.com/embed/KeHkGkK7qtA?wmode=transparent" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="side-video" src="https://www.youtube.com/embed/yY6CBcrPJuo?wmode=transparent" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="side-video" src="https://www.youtube.com/embed/KeHkGkK7qtA?wmode=transparent" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<app-live-feed (onToggleChange)="toggleVideos($event)"> </app-live-feed>
+
+	
+</div>
+

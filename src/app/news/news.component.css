@@ -1,0 +1,112 @@
+.body{
+  background-color: black !important;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.soon{
+	color: white;
+	margin-top: 5%;
+}
+
+.later{
+	margin-top: 2%;
+}
+
+.tour-banner{
+  max-width: 1900px;
+  height: 300px;
+  background-image: url("./../../dragon.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 35%;
+  background-size: cover;
+  margin-top: -3%; 
+} 
+
+.shadow{
+	background-color: rgba(0, 0, 0, 0.6);
+	max-width: 1900px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.sectionName{
+	font-size: 80px;
+	color: white;
+	padding-top: 80px;
+}
+
+.news-title{
+  color: white;
+  font-size: 20px;
+}
+
+.news-border{
+  width: 100%;
+  height: 0px;
+  border-top: 3px solid white;
+}
+
+.news-chunk{
+  margin-top: -5%;
+  height: 150px;
+  min-height: 150px;
+}
+
+.article{
+  width: 50%;
+}
+
+.more{
+  color: #04d8ce;
+  font-size: 14px;
+}
+
+
+.news-summary{
+  color: white;
+}
+
+.news-date{
+  color: white;
+  font-size: 14px;
+}
+
+
+@media(max-width: 950px){
+  .sectionName{
+    font-size: 75px;
+  }
+}
+
+@media(max-width: 700px){
+  .sectionName{
+    font-size: 70px;
+  }
+
+  .news-title{
+    font-size: 18px;
+  }
+
+  .news-summary{
+    font-size: 15px;
+  }
+
+  .news-date{
+    color: white;
+    font-size: 13px;
+  }
+
+  .news-border{
+    border-top: 2px solid white;
+  }
+}
+
+@media(max-width: 530px){
+   .sectionName{
+    font-size: 60px;
+  }
+}

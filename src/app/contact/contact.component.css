@@ -1,0 +1,141 @@
+.body{
+  background-color: black !important;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.soon{
+	color: white;
+	margin-top: 5%;
+}
+
+.later{
+	margin-top: 2%;
+}
+
+.tour-banner{
+  max-width: 1900px;
+  height: 300px;
+  background-image: url("./../../revelation.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 35%;
+  background-size: cover;
+  margin-top: -3%; 
+} 
+
+.shadow{
+	background-color: rgba(0, 0, 0, 0.6);
+	max-width: 1900px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sectionName{
+	font-size: 80px;
+	color: white;
+	padding-top: 80px;
+}
+
+.left{
+  float: left;
+  margin-left: 10%;
+}
+
+.right{
+  float: right;
+  margin-right: 10%;
+}
+
+.main, .social{
+  color: white;
+}
+
+.social{
+  width: 100% !important;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 40%;
+}
+
+.band{
+  width: 100% !important;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 2%;
+}
+
+.social i{
+  color: white;
+  font-size: 28px;
+  padding-right: 4%;
+  margin-left: 4%;
+}
+
+.member{
+  background-color: white;
+  height: 250px;
+  width: 174px;
+}
+
+.member img{
+  width: 100%;
+  height: 250px;
+}
+
+.shadow-wrapper{
+  height: 250px;
+  width: 0px;
+  margin-top: -254px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 100000 !important;
+  overflow: hidden;
+}
+
+.shadow-wrapper a{
+  display: block;
+  font-size: 30px;
+  color: #0f8d9b;
+  margin-top: 10%;
+  overflow: hidden;
+}
+
+@media(max-width: 950px){
+  .sectionName{
+    font-size: 75px;
+  }
+}
+
+@media(max-width: 750px){
+  .left{
+    float: none;
+     margin-left: 0%;
+  }
+
+  .right{
+    margin-right: 0%;
+    float: none;
+  }
+
+  .main{
+    text-align: center;
+  }
+
+  .social{
+     margin-top: 5%;
+  }
+}
+
+@media(max-width: 700px){
+  .sectionName{
+    font-size: 70px;
+  }
+}
+
+@media(max-width: 530px){
+   .sectionName{
+    font-size: 60px;
+  }
+}

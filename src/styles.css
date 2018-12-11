@@ -1,0 +1,8 @@
+@import "~@angular/material/prebuilt-themes/purple-green.css";
+@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+@import url(https://use.fontawesome.com/releases/v5.1.0/css/all.css);
+
+body {
+    margin: 0;
+    background-color: black;
+}

@@ -1,0 +1,290 @@
+.collector-banner{
+  max-width: 1900px;
+  min-height: 50px;
+  background-image: url("./../../liberation.jpg");
+  background-repeat: no-repeat;
+  width: 100% !important; 
+  height: 0; 
+  padding-top: 66.64%; 
+  background-size: cover;
+  background-attachment: fixed;  /*PALLAGRAM  */
+} 
+
+iframe{
+  z-index: -10000px !important;
+}
+
+.videos{
+    z-index: -10000px !important;
+}
+
+.body{
+  background-color: black !important;
+  width: 100%;
+  height: 100%;
+}
+
+.shadow{
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 1900px;
+  height: 1200px;
+  margin-top: -74%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.title{
+  font-size: 100px;
+  color: white;
+  padding-top: 200px;
+}
+
+.second-line-title{
+  margin-top: -10%;
+}
+
+.scroll{
+  margin-top: -0.5% !important;
+  color: white;
+  font-size: 17px;
+}
+
+.material-icons{
+  color: white;
+  font-size: 17px;
+}
+
+.news-header{
+  color: white;
+  margin-left: 42%;
+}
+
+.news-header:after {
+  content: "";
+  display: inline-block;
+  width: 60%;
+  margin: 0 .5em 0 -55%;
+  margin-left: 5% !important;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  border-color: white;
+}
+
+
+.news-header:before {
+  content: "";
+  display: inline-block;
+  width: 60%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  border-color: white;
+}
+
+.news-title{
+  color: white;
+  font-size: 20px;
+}
+
+.news-border{
+  width: 100%;
+  height: 0px;
+  border-top: 3px solid white;
+}
+
+.news-chunk{
+  margin-top: -5%;
+  height: 150px;
+  min-height: 150px;
+}
+
+.article{
+  width: 50%;
+}
+
+.news-summary{
+  color: white;
+}
+
+.news-date{
+  color: white;
+  font-size: 14px;
+}
+
+.more{
+  color: #04d8ce;
+  font-size: 14px;
+}
+
+.video-header:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  margin-left: 5% !important;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  border-color: white;
+}
+
+.video-header{
+  color: white;
+  margin-left: 42%;
+}
+
+.video-header:before {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  border-color: white;
+}
+
+.main-video{
+  width: 70%;
+  margin-left: 15%;
+  height: 500px;
+}
+
+.secondary-videos{
+  margin-left: 15%;
+  margin-top: 1%;
+}
+
+.side-video{
+  width: 26.5%;
+  height: 220px;
+  margin-left: 1%;
+}
+
+@media(max-width: 950px){
+  .title{
+    font-size: 85px;
+  }
+}
+
+@media(max-width: 850px){
+  .news-header{
+    font-size: 27px;
+  }
+
+  .video-header{
+    font-size: 27px;
+  }
+}
+
+@media(max-width: 750px){
+  .side-video{
+     width: 82.5%;
+     margin-left: 0%;
+     margin-top: 2%;
+  }
+
+  .main-video{
+    height: 220px;
+  }
+}
+
+@media(max-width: 700px){
+  .title{
+    font-size: 75px;
+  }
+
+  .news-header{
+    font-size: 25px;
+  }
+  
+  .video-header{
+    font-size: 25px;
+  }
+
+  .news-title{
+    font-size: 18px;
+  }
+
+  .news-summary{
+    font-size: 15px;
+  }
+
+  .news-date{
+    color: white;
+    font-size: 13px;
+  }
+
+  .news-border{
+    border-top: 2px solid white;
+  }
+}
+
+@media(max-width: 650px){
+  .title{
+    padding-top: 150px;
+  }
+
+  .scroll{
+      margin-top: -10% !important;
+  }
+
+  .down{
+    position: relative;
+    top: -60px;
+  }
+
+  .news-header{
+    font-size: 23px;
+  }
+  
+  .video-header{
+    font-size: 23px;
+  }
+}
+
+@media(max-width: 600px){
+  .news-header:after {
+    width: 50%;
+  }
+
+  .news-header:before {
+    width: 50%;
+    margin: 0 .5em 0 -48%;
+  }
+
+  .video-header:after {
+    width: 40%;
+  }
+
+  .video-header:before {
+    width: 40%;
+  }
+
+}
+
+@media(max-width: 500px){
+   .title{
+      padding-top: 100px;
+    }
+}
+
+@media(max-width: 440px){
+   .title{
+      padding-top: 80px;
+    }
+
+    .scroll{
+      margin-top: -15% !important;
+    }
+
+    .video-header:after {
+      width: 30%;
+    }
+
+    .video-header:before {
+      width: 30%;
+    }
+
+    .news-header:before {
+      margin: 0 .5em 0 -54%;
+    }
+}

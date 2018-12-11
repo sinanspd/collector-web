@@ -1,0 +1,42 @@
+<app-menu></app-menu>
+<div class="tour-banner">
+	<div class="shadow">
+		<p class="sectionName"> Pillars of Chaos </p>
+	</div>
+</div>
+
+
+<div class="main">
+	<h2> A Tale of Creation </h2>
+	<p class="bio"> The band was originally started in 2010 in Ankara, Turkey under the name
+	"Ecstasy" by Yagiz Ozdag and his friends. The band continued without vocals and a bass player for sometime until Umut Emre Ture joined the band, in late 2010, after reading a post by the band on a forum. In 2011 with Burak Kok joining the lineup the band changed their name to Collector. The early Collector at that time, was just a cover band. In 2014 Sinan joined the band, filling the gap on lead guitars and vocals, forming what can be called the real former line up of Collector, carrying the band to Boston, MA, USA where he
+    was located. In 2016, the band started composing their first album, later came to be known as 'Liberation's Fall'. Towards the end of 2016, Burak Kok decided to leave the band to pursue his professional career in architectureand Mesut Basaran replaced him on guitars.
+	</p>
+
+	<div class="members">
+		<div class="member" *ngFor="let member of members">
+			<img class="member-picture" [src]="['/assets/images/' +  member.picture]">
+			<mat-tab-group class="tabs">
+			  <mat-tab class="tab" label="Bio"> 
+			  	<p class="tab"> {{member.biolong}} </p>
+			   </mat-tab>
+			  <mat-tab class="tab" label="Summary">
+			  	<p class="tab"> Name: {{member.name}} {{member.lastname}} </p>
+			  	<p class="tab"> Instruments: {{member.intruments}} </p>
+			  	<p class="tab"> Other Intruments: {{member.otherinst}}</p>
+			  	<p class="tab"> Birthdate: {{member.birthdate}}</p>
+			  	<p class="tab"> Place of Birth: {{member.placeofbirth}}</p>
+			  	<p class="tab"> Profession: {{member.job}}</p>
+			  	<p class="tab"> Interests: {{member.interests}}</p>
+			  </mat-tab>
+			  <mat-tab class="tab" label="Gear">
+			  	<p class="tab"> {{member.instruments1}} </p>
+			  	<p class="tab"> {{member.instruments2}} </p>
+			  	<p class="tab"> {{member.instruments3}} </p>
+			  	<p class="tab"> {{member.instruments4}} </p>
+			  	<p class="tab"> {{member.instruments5}} </p>
+			  </mat-tab>
+			</mat-tab-group>
+		</div>
+	</div>
+</div>

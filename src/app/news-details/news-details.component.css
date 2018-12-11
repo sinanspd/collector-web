@@ -1,0 +1,33 @@
+.body{
+  background-color: black !important;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.soon{
+	color: white;
+	margin-top: 5%;
+}
+
+.later{
+	margin-top: 2%;
+}
+
+.tour-banner{
+  max-width: 1900px;
+  height: 300px;
+  background-image: url("./../../dragon.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 35%;
+  background-size: cover;
+  margin-top: -3%; 
+} 
+
+.shadow{
+	background-color: rgba(0, 0, 0, 0.6);
+	max-width: 1900px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
