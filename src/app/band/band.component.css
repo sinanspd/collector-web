@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.wrap{
+  max-width: 1920px;
+}
+
 .soon{
 	color: white;
 	margin-top: 5%;
@@ -58,6 +62,7 @@
   width: 15%;
   float: left;
   margin-left: 5%;
+  min-width: 190px;
 }
 
 .main{
@@ -76,4 +81,72 @@
 
 .main h2, .bio{
   color: white;
+}
+
+@media(min-width: 1650px){
+  .member{
+    margin-top: 8%;
+  }
+}
+
+@media(min-width: 1400px) and (max-width: 1650px){
+  .member{
+    margin-top: 5%;
+  }
+}
+
+@media(max-width: 1010px){
+  .tabs{
+    margin-left: 33% !important;
+  }
+
+  .tab{
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 950px){
+  .sectionName{
+    font-size: 75px;
+  }
+}
+
+@media(max-width: 750px){
+  .tabs{
+    margin-left: 35% !important;
+  }
+
+  .tab{
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 700px){
+  .sectionName{
+    font-size: 70px;
+  }
+
+  .member-picture{
+    display: block;
+    float: none;
+    margin-left: 25%;
+    overflow: auto;
+  }
+
+  .tabs{
+    margin-left: 5% !important;
+    display: block;
+    width: 90%;
+    overflow: auto;
+  }
+
+  .member:not(:first-child) {
+    margin-top: 400px;
+  }
+}
+
+@media(max-width: 530px){
+   .sectionName{
+    font-size: 68px;
+  }
 }

@@ -1,26 +1,28 @@
-<app-menu></app-menu>
-<div class="tour-banner">
-	<div class="shadow">
-		<p class="sectionName"> Shadow's Edge </p>
-	</div>
-</div>
-<div class="body">
-	<mat-grid-list class="news-chunk" [cols]="cols | async" rowHeight="{{rowheight}}">
-   			<mat-grid-tile
-        		*ngFor="let new of news"
-        		[colspan]="1"
-        		[rowspan]="1" 
-      		>
+<div class="main">
+  <app-menu></app-menu>
+  <div class="tour-banner">
+  	<div class="shadow">
+  		<p class="sectionName"> Shadow's Edge </p>
+  	</div>
+  </div>
+  <div class="body">
+  	<mat-grid-list class="news-chunk" [cols]="cols | async" rowHeight="{{rowheight}}">
+     			<mat-grid-tile
+          		*ngFor="let new of news"
+          		[colspan]="1"
+          		[rowspan]="1" 
+        		>
 
-      		<div class="article">
-      			<p class="news-title"> {{new.title}} </p>
-      			<div class="news-border"> </div>
-      			<p class="news-date"> {{new.date}} </p>
-      			<p class="news-summary"> {{new.summary}} </p>
-      			<p class="more"> Read More </p>
-      		</div>
+        		<div class="article">
+        			<p class="news-title"> {{new.title}} </p>
+        			<div class="news-border"> </div>
+        			<p class="news-date"> {{new.date}} </p>
+        			<p class="news-summary"> {{new.summary}} </p>
+        			<p class="more"> Read More </p>
+        		</div>
 
-    		</mat-grid-tile>
-    </mat-grid-list> 
+      		</mat-grid-tile>
+      </mat-grid-list> 
+  </div>
 </div>
 

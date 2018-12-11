@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.wrap{
+  max-width: 1920px;
+}
+
 .soon{
 	color: white;
 	margin-top: 5%;
@@ -72,6 +76,10 @@
   .release img{
     width: 30%;
   }
+
+  .sectionName{
+    font-size: 75px;
+  }
 }
 
 @media(max-width: 830px){
@@ -81,6 +89,10 @@
 
   .mat-expansion-panel{
     width: 90%;
+  }
+
+  .sectionName{
+    font-size: 70px;
   }
 }
 
@@ -96,6 +108,10 @@
 
   .release-header-details{
     font-size: 13px;
+  }
+
+  .sectionName{
+    font-size: 50px;
   }
 }
 

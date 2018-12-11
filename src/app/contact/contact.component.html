@@ -1,62 +1,64 @@
-<app-menu></app-menu>
-<div class="tour-banner">
-	<div class="shadow">
-		<p class="sectionName"> Tree of Death </p>
-	</div>
-</div>
-
-<div class="main">
-	<div class="left">
-		<div class="contact-chunk">
-			<h2> Booking </h2>
-			<p> For booking requests email: </p>
-			<p> booking@collectorofficial.com </p>
-		</div>
-		<div class="contact-chunk">
-			<h2> Webmaster </h2>
-			<p> For any problems regarding the website: </p>
-			<p> socialmedia@collectorofficial.com </p>
-		</div>
-	</div>
-	<div class="right">
-		<div class="contact-chunk">
-			<h2> Management </h2>
-			<p> For any inquiries and questions regarding the band: </p>
-			<p> management@collectorofficial.com </p>
-		</div>
-		<div class="contact-chunk">
-			<h2> Press </h2>
-			<p> For any press inquiries: </p>
-			<p> press@collectorofficial.com </p>
+<div class="wrap">
+	<app-menu></app-menu>
+	<div class="tour-banner">
+		<div class="shadow">
+			<p class="sectionName"> Tree of Death </p>
 		</div>
 	</div>
 
-	<div class="social">
-		<h2> Collector on Social Media </h2>
-		<a href="https://www.facebook.com/collectoroffical/"><i class="fab fa-facebook-f"></i></a>
-		<a href="https://twitter.com/CollectorOffcl"><i class="fab fa-twitter"></i></a>
-		<a href="https://www.instagram.com/collector_official/"><i class="fab fa-instagram"></i></a>
-		<a href="https://youtube.com/CollectorOfficial"><i class="fab fa-youtube"></i></a>
-	</div>
+	<div class="main">
+		<div class="left">
+			<div class="contact-chunk">
+				<h2> Booking </h2>
+				<p> For booking requests email: </p>
+				<p> booking@collectorofficial.com </p>
+			</div>
+			<div class="contact-chunk">
+				<h2> Webmaster </h2>
+				<p> For any problems regarding the website: </p>
+				<p> socialmedia@collectorofficial.com </p>
+			</div>
+		</div>
+		<div class="right">
+			<div class="contact-chunk">
+				<h2> Management </h2>
+				<p> For any inquiries and questions regarding the band: </p>
+				<p> management@collectorofficial.com </p>
+			</div>
+			<div class="contact-chunk">
+				<h2> Press </h2>
+				<p> For any press inquiries: </p>
+				<p> press@collectorofficial.com </p>
+			</div>
+		</div>
 
-	<div class="band">
-		<h2> Members on Social Media </h2>
-		<mat-grid-list class="news-chunk" [cols]="cols | async" rowHeight="{{rowheight}}">
-   			<mat-grid-tile
-        		*ngFor="let member of members"
-        		[colspan]="1"
-        		[rowspan]="1" 
-      		>
-      		
-      		<div class="member" (mouseenter)="setCollapse(member.name, true)" (mouseleave)="setCollapse(member.name, false)">
-      			<img [src]="['assets/images/' + member.picture]">
-      			<div [@slideInOut]="isCollapsed(member.name)" class="shadow-wrapper">
-      				<a *ngIf="isCollapsed(member.name)" href="{{member.facebook}}"><i class="fab fa-facebook-f"></i></a>
-					<a *ngIf="isCollapsed(member.name)" href="{{member.twitter}}"><i class="fab fa-twitter"></i></a>
-					<a *ngIf="isCollapsed(member.name)" href="{{member.instagram}}" style="color: red"><i class="fab fa-instagram"></i></a>
-      			</div>
-      		</div>
-    		</mat-grid-tile>
- 		 </mat-grid-list> 
+		<div class="social">
+			<h2> Collector on Social Media </h2>
+			<a href="https://www.facebook.com/collectoroffical/"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://twitter.com/CollectorOffcl"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com/collector_official/"><i class="fab fa-instagram"></i></a>
+			<a href="https://youtube.com/CollectorOfficial"><i class="fab fa-youtube"></i></a>
+		</div>
+
+		<div class="band">
+			<h2> Members on Social Media </h2>
+			<mat-grid-list class="news-chunk" [cols]="cols | async" rowHeight="{{rowheight}}">
+	   			<mat-grid-tile
+	        		*ngFor="let member of members"
+	        		[colspan]="1"
+	        		[rowspan]="1" 
+	      		>
+	      		
+	      		<div class="member" (mouseenter)="setCollapse(member.name, true)" (mouseleave)="setCollapse(member.name, false)">
+	      			<img [src]="['assets/images/' + member.picture]">
+	      			<div [@slideInOut]="isCollapsed(member.name)" class="shadow-wrapper">
+	      				<a *ngIf="isCollapsed(member.name)" href="{{member.facebook}}"><i class="fab fa-facebook-f"></i></a>
+						<a *ngIf="isCollapsed(member.name)" href="{{member.twitter}}"><i class="fab fa-twitter"></i></a>
+						<a *ngIf="isCollapsed(member.name)" href="{{member.instagram}}" style="color: red"><i class="fab fa-instagram"></i></a>
+	      			</div>
+	      		</div>
+	    		</mat-grid-tile>
+	 		 </mat-grid-list> 
+		</div>
 	</div>
 </div>

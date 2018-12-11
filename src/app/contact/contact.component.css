@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.wrap{
+  max-width: 1920px;
+}
+
 .soon{
 	color: white;
 	margin-top: 5%;

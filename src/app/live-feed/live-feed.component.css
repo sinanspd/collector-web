@@ -65,6 +65,12 @@
     }
 }
 
+@media(min-width: 1500px){
+   .social{
+      margin-top: -3.5%;
+    }
+}
+
 @media(max-width: 900px){
   .twitter{
     margin-right: 5%;
