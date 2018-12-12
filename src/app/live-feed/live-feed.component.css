@@ -9,7 +9,6 @@
   z-index: 100000!important;
   background-color: black !important;
   overflow: hidden;
-  
 }
 
 .live-feed h2{
@@ -27,6 +26,10 @@
   margin-top: 2.5%;
   margin-left: 2%;
   font-size: 14px;
+}
+
+.feeds{
+  max-width: 1900px;
 }
 
 .social{
@@ -53,6 +56,48 @@
   padding-right: 10%;
 }
 
+@media(min-width: 2900px){
+  .social{
+      margin-top: -1.5%;
+  }
+
+  .expand-feed{
+    margin-left: -1% !important;
+    margin-top: -0.1%;
+  }
+
+  .feeds{
+    margin: auto;
+    padding: 10px;
+  }
+
+  .copyright{
+    margin-top: 1%;
+  }
+
+
+  .expandable h2{
+     margin-top: 0.1%;
+  }
+}
+
+@media(min-width: 2080px) and (max-width: 2900px){ 
+  .feeds{
+    max-width: 1900px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .social{
+      margin-top: -2.5%;
+  }
+
+  .copyright{
+    margin-top: 1%;
+  }
+
+}
+
 @media (max-width: 1100px){
 
     .expandable h2{
@@ -65,7 +110,7 @@
     }
 }
 
-@media(min-width: 1500px){
+@media(min-width: 1500px) and (max-width: 2080px){
    .social{
       margin-top: -3.5%;
     }

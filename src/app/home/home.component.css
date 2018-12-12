@@ -1,5 +1,5 @@
 .collector-banner{
-  max-width: 1900px;
+  /*max-width: 1900px; */
   min-height: 50px;
   background-image: url("./../../liberation.jpg");
   background-repeat: no-repeat;
@@ -22,12 +22,16 @@ iframe{
   background-color: black !important;
   width: 100%;
   height: 100%;
+ /* max-width: 1920px; */
+}
+
+.content-wrapper{
   max-width: 1920px;
 }
 
 .shadow{
   background-color: rgba(0, 0, 0, 0.5);
-  max-width: 1900px;
+ /* max-width: 1900px; */
   height: 1200px;
   margin-top: -74%;
   text-align: center;
@@ -163,9 +167,37 @@ iframe{
 }
 
 
+@media(min-width: 2050px){
+  .title{
+    padding-top: 600px !important;
+  }
+
+  .shadow{
+    height: 3000px;
+  }
+
+  .video-header:after {
+    width: 50%;
+  }
+
+  .video-header:before {
+    width: 60%;
+  }
+
+  .scroll{
+    margin-top: 1% !important;
+  }
+
+}
+
 @media(min-width: 1850px){
   .secondary-videos, .main-video{
     margin-left: 25%;
+  }
+
+  .content-wrapper{
+     margin: auto;
+     padding: 10px;
   }
 }
 
@@ -175,7 +207,7 @@ iframe{
   }
 }
 
-@media(min-width: 1650px){
+@media(min-width: 1650px) and (max-width: 2050px){
   .title{
     padding-top: 400px !important;
   }

@@ -6,7 +6,6 @@
 }
 
 .wrap{
-  max-width: 1920px;
 }
 
 .soon{
@@ -19,7 +18,6 @@
 }
 
 .tour-banner{
-  max-width: 1900px;
   height: 300px;
   background-image: url("./../../bandfullfinal.jpg");
   background-repeat: no-repeat;
@@ -30,10 +28,9 @@
 
 .shadow{
 	background-color: rgba(0, 0, 0, 0.6);
-	max-width: 1900px;
-    height: 300px;
-    text-align: center;
-    vertical-align: middle;
+  height: 300px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .sectionName{
@@ -67,6 +64,7 @@
 
 .main{
   text-align: center;
+   max-width: 1920px;
 }
 
 .tabs{
@@ -81,6 +79,14 @@
 
 .main h2, .bio{
   color: white;
+}
+
+@media(min-width: 1850px){
+  .main{
+     margin: auto;
+     margin-top: 5% !important;
+     padding: 10px;
+  }
 }
 
 @media(min-width: 1650px){
